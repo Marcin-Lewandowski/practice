@@ -37,7 +37,6 @@ def pauza(event):
 def kontynuuj(event):
     global animacja_aktywna
     animacja_aktywna = True
-    animacja.event_source.start()
 
 # Inicjalizacja animacji
 fig, ax = plt.subplots()
