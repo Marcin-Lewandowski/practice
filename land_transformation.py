@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 # Matrix creation
-A = np.random.randint(1, 16, size=(20, 20))
+A = np.random.randint(1, 16, size=(15, 15))
 
 # color assignment function
 def color_assignment(number):
@@ -51,13 +51,13 @@ def update(frame):
 
 
     # Stop the animation after 10 iterations
-    if iteration_count >= 15:
+    if iteration_count >= 500:
         ani.event_source.stop()
 
     
 
 # Create an animation that updates every 2 seconds
-ani = FuncAnimation(fig, update, interval=2000)
+ani = FuncAnimation(fig, update, interval=100)
 
 # Show the animation
 plt.show()
