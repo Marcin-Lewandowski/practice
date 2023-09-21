@@ -1,5 +1,6 @@
 import tkinter as tk
 import numpy as np
+import pandas as pd
 
 # Funkcja sprawdzająca odpowiedź użytkownika
 def sprawdz_odpowiedz():
